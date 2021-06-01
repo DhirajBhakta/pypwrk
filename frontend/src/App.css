@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+.square-grid {
+  background-size: 40px 40px;
+  background-image: radial-gradient(circle, gray 1px, rgba(0, 0, 0, 0) 1px);
+}
+
+.full-size {
+  width: 500vw;
+  height: 500vh;
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -37,4 +46,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/*/////////////////// throwaway css ////////////////////////*/
+.lolz{
+  background-color: black;
+  color:white;
+  font-size: large;
+  height: 30px;
+  width: 100px;
 }

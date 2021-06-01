@@ -1,15 +1,19 @@
 import { render } from 'inferno';
+import { BrowserRouter, Route, Link } from 'inferno-router';
 import { Provider } from 'inferno-mobx';
-import { observable } from 'mobx';
 import './index.css';
 import App from './App';
 import rootStore from './stores/rootstore'
 import * as serviceWorker from './serviceWorker';
+import Workflow from './pages/Workflow';
 
 
 render(
     <Provider rootStore={rootStore}>
-        <App />
+        <BrowserRouter>
+            <Route exact path="/" component={App} />
+            <Route path="/flow" component={Workflow} />
+        </BrowserRouter>
     </Provider>,
     document.getElementById('root')
 );

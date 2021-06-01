@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gsap": "^3.6.1",
     "inferno": "^7.4.8",
     "inferno-mobx": "^7.4.8",
+    "inferno-router": "^7.4.8",
     "inferno-scripts": "7.0.4",
     "mobx": "^6.3.2"
   },
